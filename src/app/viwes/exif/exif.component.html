@@ -1,0 +1,19 @@
+<p>Crie 3 botões que o usuário deve escolher para clicar e adivinhar qual o botão correto. Caso o botão
+    correto seja clicado, mostre uma imagem de sucesso abaixo dos botões. Caso um botão inválido tenha
+    sido clicado, mostre uma mensagem de game over. Defina também um botão que permita reiniciar o
+    jogo</p>
+
+    <button type="submit" (click)="certo(1)">
+        <i class="bi bi-x"></i>
+    </button>
+    <button type="submit" (click)="errado(2)"><i class="bi bi-x"></i></button>
+    <br>
+    <br>
+    <div *ngIf="adivinha == 'certo'">
+        <p>parabens</p>
+    </div>
+    <div *ngIf="adivinha == 'errado'">
+        <p>game over</p>
+    </div>
+
+    <button type="submit" (click)=jogaDeNovo()><i class="bi bi-x"></i></button>

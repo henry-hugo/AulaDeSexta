@@ -1,0 +1,46 @@
+<p>0. Elabore um componente que mostre os valores de avaliação de filmes usando um select (notas 1, 2, 3, 4 e 5).
+    Quando um valor for selecionado no select, devem ser exibidas estrelas referentes a nota concedida na parte
+    inferior do componente</p>
+
+    <div>
+        <img src="https://jardimdasamericas.com.br/uploads/2023/04/capa-filme-super-mario-bros-filme-3cb50-large.jpg" alt="mario" width="300px" height="400px">
+        <br>
+        <div>
+            <p *ngIf="estrela == 1">
+                <i class="bi bi-star-fill"></i>
+            </p>
+            <p *ngIf="estrela == 2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </p>
+            <p *ngIf="estrela == 3">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </p>
+            <p *ngIf="estrela == 4">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </p>
+            <p *ngIf="estrela == 5">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </p>
+        </div>
+        <div style="display: flex;">
+            <label  for="">Avaliaçao</label>
+            <select type="number" [(ngModel)]="estrela">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        
+    </div>

@@ -1,0 +1,11 @@
+<h4>Elabore um componente contendo um array de filmes e um de protagonistas (cada protagonista
+    alinhado com cada filme nas posições). Faça com que as capas dos filmes sejam exibidas na página
+    usando ngFor. Quando a capa for clicada, um alerta deve ser exibido com o respectivo protagonista do
+    filme.</h4>
+
+    <ul style="display: flex;">
+        <li *ngFor="let filme of filmes; let i = index">
+            <img src="assets/{{filme}}.jpg" alt="" width="300px" height="400px" (click)="protagonista(i)">
+        </li>
+    </ul>
+        
