@@ -1,1 +1,46 @@
-<p>exbinding works!</p>
+<p> Construa um teclado virtual, usando imagens e tratando o evento de clique delas. O teclado deve jogar os
+valores digitados numa caixa de texto.</p>
+
+<div>
+  <input type="text" [(ngModel)]="texto" name="texto" id="">
+</div>
+<div style="display: inline;">
+  <button (click)="teclado('q')">Q</button>
+  <button (click)="teclado('w')">W</button>
+  <button (click)="teclado('e')">E</button>
+  <button (click)="teclado('r')">R</button>
+  <button (click)="teclado('t')">T</button>
+  <button (click)="teclado('y')">Y</button>
+  <button (click)="teclado('u')">U</button>
+  <button (click)="teclado('i')">I</button>
+  <button (click)="teclado('o')">O</button>
+  <button (click)="teclado('p')">P</button>
+</div>
+<br>
+<div style="display: inline;">
+  <button (click)="teclado('a')">A</button>
+  <button (click)="teclado('s')">S</button>
+  <button (click)="teclado('d')">D</button>
+  <button (click)="teclado('f')">F</button>
+  <button (click)="teclado('g')">G</button>
+  <button (click)="teclado('h')">H</button>
+  <button (click)="teclado('j')">J</button>
+  <button (click)="teclado('k')">K</button>
+  <button (click)="teclado('l')">L</button>
+  <button (click)="teclado('ç')">Ç</button>
+</div>
+<br>
+<div style="display: inline; padding-left: 2rem;">
+  <button (click)="teclado('z')">Z</button>
+  <button (click)="teclado('x')">X</button>
+  <button (click)="teclado('c')">C</button>
+  <button (click)="teclado('v')">V</button>
+  <button (click)="teclado('b')">B</button>
+  <button (click)="teclado('n')">N</button>
+  <button (click)="teclado('m')">M</button>
+</div>
+<br>
+<div style="display: inline; padding-left: 2rem;">
+  <button (click)="teclado(' ')"> </button>
+</div>
+

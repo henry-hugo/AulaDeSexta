@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./exbinding.component.css']
 })
 export class ExbindingComponent {
+  texto = '';
 
+  teclado(letra = ''){
+    this.texto +=letra;
+  }
 }
