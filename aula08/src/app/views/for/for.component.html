@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let nome of bichos; let i = index">
+     {{i}} {{nome}}
+    </li>
+</ul>
+<form action="">
+  <input [(ngModel)]="novoAnimal" type="text" name="novo" id="novo">
+  <input type="button" (click)="add()" value="adicionar">
+</form>

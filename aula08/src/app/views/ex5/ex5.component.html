@@ -1,0 +1,20 @@
+<div class="center">
+  <input [(ngModel)]="number1" type="number" name="number1" id="number1">
+
+  <input [(ngModel)]="number2" type="number" name="number2" id="number2">
+  <br>
+  <br>
+  <div *ngIf="number1 && number2">
+    <button (click)="caucular('+')">+</button>
+    <button  (click)="caucular('-')">-</button>
+    <button  (click)="caucular('*')">*</button>
+    <button  (click)="caucular('/')">/</button>
+  </div>
+  <br>
+  <br>
+  <div>
+    {{resultado}}
+  </div>
+
+
+</div>

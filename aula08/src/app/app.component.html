@@ -1,0 +1,28 @@
+<div>
+  <input [(ngModel)]="numero" type="number" name="number" id="number">
+</div>
+
+<div *ngIf="numero == 0" >
+  Zero
+</div>
+<div *ngIf="numero < 0" >
+  numero negativo!!
+</div>
+<div *ngIf="numero > 0" >
+  numero positivo!!
+</div>
+
+<hr>
+<app-ex4></app-ex4>
+
+<hr>
+
+<app-ex5></app-ex5>
+
+<hr>
+
+<app-for></app-for>
+
+<hr>
+
+<app-ng-forex1></app-ng-forex1>

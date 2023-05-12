@@ -1,0 +1,15 @@
+<select [(ngModel)]="opcao" name="opcao" id="opcao">
+  <option value="email" >Email
+
+  </option>
+  <option value="whatsapp">Whatsapp
+
+  </option>
+
+</select>
+<div *ngIf="opcao == 'email'">
+  <input type="email" name="email" id="email" placeholder="email">
+</div>
+<div *ngIf="opcao == 'whatsapp'">
+  <input type="tel" name="tel" id="tel" placeholder="tel">
+</div>

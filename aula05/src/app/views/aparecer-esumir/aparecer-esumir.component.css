@@ -1,0 +1,22 @@
+.visivel{
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  display: block;
+  float: left;
+}
+
+.invisivel{
+  display: none;
+}
+
+.visivelup{
+  width: 500px;
+  height: 400px;
+  border: 1px solid black;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
