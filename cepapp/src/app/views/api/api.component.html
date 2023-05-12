@@ -1,0 +1,28 @@
+
+<input type="text" name="cep" [(ngModel)]="cep">
+<input type="button" (click)="consultarCep()" value="Consultar">
+<br><br>
+<div *ngIf="endereco">
+  <form action="" method="post">
+    <label for="">logradouro: </label>
+    <input type="text" value=" {{endereco.logradouro}}" Readonly>
+    <br>
+    <label for="">complemento: </label>
+    <input for="tet" value="{{endereco.complemento}}" >
+    <br>
+    <label for="">Numero: </label>
+    <input type="number">
+    <br>
+    <label for="">bairro: </label>
+    <input type="text" value="{{endereco.bairro}}" Readonly>
+    <br>
+    <label for="">localidade: </label>
+    <input type="text" value="{{endereco.localidade}}" Readonly>
+    <br>
+    <label for="">uf: </label>
+    <input type="text" value="{{endereco.uf}}" Readonly>
+    <br>
+    <input type="button" value="Enviar">
+  </form>
+
+</div>
