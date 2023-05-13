@@ -1,26 +1,39 @@
 {
-  "posts": [
+  "cliente": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "nome": "João",
+      "cpf": "12345678912",
+      "id": 1
     },
     {
-      "id": 2,
-      "title": "json-server",
-      "author": "typicode"
-    }
-    
-    
-  ],
-  "comments": [
+      "nome": "Maria",
+      "cpf": "12345678912",
+      "id": 2
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "nome": "Meny",
+      "cpf": "12345678912",
+      "id": 3
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "produto": [
+    {
+      "nome": "niks",
+      "codigo": "00001",
+      "tipo": "camisa",
+      "id": 1
+    },
+    {
+      "nome": "jakas",
+      "codigo": "00002",
+      "tipo": "camisa",
+      "id": 2
+    },
+    {
+      "nome": "addis",
+      "codigo": "00003",
+      "tipo": "camisa",
+      "id": 3
+    }
+  ]
 }
