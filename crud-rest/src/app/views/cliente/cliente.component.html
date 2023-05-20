@@ -1,0 +1,37 @@
+<button *ngIf="lista" (click)="listar()">lista</button>
+
+    <table  *ngIf="!lista" border="1">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">nome</th>
+          <th scope="col">cpf</th>
+          <th scope="col">editar</th>
+          <th scope="col">excluir</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let cliente of listaClientes">
+          <th>{{cliente.id}}</th>
+          <th>{{cliente.nome}}</th>
+          <th>{{cliente.cpf}}</th>
+          <th><input type="button" value="editar" (click)="selecionar(cliente)"></th>
+          <th><input type="button" value="Excluir" (click)="excluir(cliente.id)"></th>
+
+          <!-- <button (click)="salvar()">salvar</button> -->
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <label for="nome">Nome</label>
+      <input type="text" [(ngModel)]="adicionarCliente.nome"><br>
+      <label for="cpf">CPF</label>
+      <input type="text" [(ngModel)]="adicionarCliente.cpf">
+      <div *ngIf="estaEditando == false">
+        <button (click)="adicionar()">add novo cliente</button>
+      </div>
+      <div *ngIf="estaEditando == true">
+        <button (click)=" cancelar()">salvar</button>
+      </div>
+    </div>
+

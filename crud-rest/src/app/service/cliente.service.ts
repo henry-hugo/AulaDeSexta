@@ -28,3 +28,6 @@ export class ClienteService {
    return this.http.delete<Cliente>(`http://localhost:3000/cliente/${id}`);
   }
 }
+
+
+//Observable para fazer uma chamada em pararelo
