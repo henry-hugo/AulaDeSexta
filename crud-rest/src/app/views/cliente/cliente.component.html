@@ -1,4 +1,4 @@
-<button *ngIf="lista" (click)="listar()">lista</button>
+<button mat-button *ngIf="lista" (click)="listar()">lista</button>
 
     <table  *ngIf="!lista" border="1">
       <thead>
@@ -23,15 +23,20 @@
       </tbody>
     </table>
     <div>
-      <label for="nome">Nome</label>
-      <input type="text" [(ngModel)]="adicionarCliente.nome"><br>
-      <label for="cpf">CPF</label>
-      <input type="text" [(ngModel)]="adicionarCliente.cpf">
+      <mat-form-field>
+        <mat-label>Nome</mat-label>
+        <input matInput type="text" [(ngModel)]="adicionarCliente.nome">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>CPF</mat-label>
+        <input matInput type="text" [(ngModel)]="adicionarCliente.cpf">
+      </mat-form-field>
+
       <div *ngIf="estaEditando == false">
-        <button (click)="adicionar()">add novo cliente</button>
+        <button mat-button (click)="adicionar()">add novo cliente</button>
       </div>
       <div *ngIf="estaEditando == true">
-        <button (click)=" cancelar()">salvar</button>
+        <button mat-button (click)=" cancelar()">salvar</button>
       </div>
     </div>
 

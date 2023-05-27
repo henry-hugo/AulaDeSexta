@@ -1,1 +1,24 @@
-<app-cliente></app-cliente>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>
+        menu
+      </mat-icon>
+    </button>
+  <h1>Gestao de Clientes</h1>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" [opened]="true">
+    <mat-list>
+      <a mat-list-item routerLink="sobre">SOBRE</a>
+      <a mat-list-item routerLink="cliente">CLIENTE</a>
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content style="min-height: calc(100vh - 64px);">
+    <mat-card>
+      <router-outlet></router-outlet>
+    </mat-card>
+  </mat-sidenav-content>
+</mat-sidenav-container>
